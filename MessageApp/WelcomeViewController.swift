@@ -14,7 +14,24 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        // animated title 
+        realTalkLabel.text = ""
+        
+        var characterIndex = 0.0
+        
+        let titleText = "Real Talk"
+        
+        for letter in titleText {
+            
+            Timer.scheduledTimer(withTimeInterval: 0.1 * characterIndex, repeats: false) { (timer) in
+                self.realTalkLabel.text?.append(letter)
+            }
+            
+            characterIndex += 1
+    
+        }
+        
     }
     
     
