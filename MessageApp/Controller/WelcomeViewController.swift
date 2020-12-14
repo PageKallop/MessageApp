@@ -12,6 +12,18 @@ class WelcomeViewController: UIViewController {
     @IBOutlet weak var realTalkLabel: UILabel!
     
     
+    //hides root vc navbar
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    // allows the navbar to appear on next screeen
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

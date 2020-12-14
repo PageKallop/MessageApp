@@ -22,7 +22,7 @@ class RegisterViewController: UIViewController {
     
 
     @IBAction func registerButtonPressed(_ sender: UIButton) {
-        
+        // creates a new user
         if let email = emailRegister.text, let password = passwordRegister.text {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             //CREATE POPUP FOR ERROR
