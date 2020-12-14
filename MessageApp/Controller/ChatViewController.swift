@@ -13,7 +13,8 @@ class ChatViewController : UIViewController {
     
     @IBOutlet weak var textTableView: UITableView!
     
-    @IBOutlet weak var textBox: UITextField!
+    @IBOutlet weak var textBox: UITextView!
+    
     
     let db = Firestore.firestore()
     

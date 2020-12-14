@@ -30,6 +30,10 @@ class LoginViewController: UIViewController {
         Auth.auth().signIn(withEmail: email, password: password) { authResult, error in
             //CREATE ALERT
             if let e = error {
+                //creates an alert if user enters incorrect email or password
+                let alert = UIAlertController(title: "Alert", message: "Email or Password is incorrect", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Re-Enter User Info", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 print(e)
             } else {
                 self.performSegue(withIdentifier: Const.loginSegue, sender: self)

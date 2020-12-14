@@ -25,8 +25,12 @@ class RegisterViewController: UIViewController {
         // creates a new user
         if let email = emailRegister.text, let password = passwordRegister.text {
         Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-            //CREATE POPUP FOR ERROR
+        
             if let e = error {
+                // creartes alert if user doesn't use the correct legnth password
+                let alert = UIAlertController(title: "Alert", message: "Password must be six characters long", preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "Re-enter", style: UIAlertAction.Style.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 print(e.localizedDescription)
             }  else {
                 
