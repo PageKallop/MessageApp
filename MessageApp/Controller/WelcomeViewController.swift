@@ -11,6 +11,10 @@ class WelcomeViewController: UIViewController {
 
     @IBOutlet weak var realTalkLabel: UILabel!
     
+    @IBOutlet weak var registerButton: UIButton!
+    
+    @IBOutlet weak var logInButton: UIButton!
+    
     
     //hides root vc navbar
     override func viewWillAppear(_ animated: Bool) {
@@ -27,6 +31,8 @@ class WelcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerButton.layer.cornerRadius = 20
+        logInButton.layer.cornerRadius = 20 
         
         
         

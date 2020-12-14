@@ -16,6 +16,10 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if #available(iOS 12.0, *){
+            passwordRegister.textContentType = .oneTimeCode
+        }
 
         // Do any additional setup after loading the view.
     }
