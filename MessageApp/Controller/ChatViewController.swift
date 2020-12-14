@@ -37,8 +37,11 @@ class ChatViewController : UIViewController {
     }
     
     func loadMessages(){
-        messages = []
-        db.collection(Const.FStore.collectionName).getDocuments { (querySnapshot, error) in
+        
+        db.collection(Const.FStore.collectionName)
+            .order(by: Const.FStore.dateField).addSnapshotListener { (querySnapshot, error) in
+            self.messages = []
+            
             if let e = error {
                 print("error retrievingn error \(e)")
             } else {
@@ -66,7 +69,8 @@ class ChatViewController : UIViewController {
         if let messageBody = textBox.text, let messageSender = Auth.auth().currentUser?.email {
             
             db.collection(Const.FStore.collectionName).addDocument(data: [Const.FStore.senderField: messageSender,
-                                                                          Const.FStore.bodyField: messageBody]) { (error) in
+                Const.FStore.bodyField: messageBody,
+                Const.FStore.dateField: Date().timeIntervalSince1970]) { (error) in
                 if let e = error {
                     print("Issue saving data \(e)")
                 } else {
