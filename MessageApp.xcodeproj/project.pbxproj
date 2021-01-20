@@ -23,7 +23,7 @@
 		C03C225D25869C4100401A53 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03C225C25869C4100401A53 /* Message.swift */; };
 		C046CEAE2586B8600008B279 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C046CEAC2586B8600008B279 /* MessageCell.swift */; };
 		C046CEAF2586B8600008B279 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C046CEAD2586B8600008B279 /* MessageCell.xib */; };
-		C04F3BB8258583D8007539F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C04F3BB7258583D8007539F6 /* GoogleService-Info.plist */; };
+		C061B36A25B7B3B50000679D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C061B36925B7B3B50000679D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +68,7 @@
 		C03C225C25869C4100401A53 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		C046CEAC2586B8600008B279 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		C046CEAD2586B8600008B279 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
-		C04F3BB7258583D8007539F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C061B36925B7B3B50000679D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,8 +138,8 @@
 				C03C226525869C5000401A53 /* View */,
 				C016EED32583D3D40018114B /* Assets.xcassets */,
 				C016EED52583D3D40018114B /* LaunchScreen.storyboard */,
+				C061B36925B7B3B50000679D /* GoogleService-Info.plist */,
 				C016EED82583D3D40018114B /* Info.plist */,
-				C04F3BB7258583D8007539F6 /* GoogleService-Info.plist */,
 			);
 			path = MessageApp;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 			files = (
 				C046CEAF2586B8600008B279 /* MessageCell.xib in Resources */,
 				C016EED72583D3D40018114B /* LaunchScreen.storyboard in Resources */,
-				C04F3BB8258583D8007539F6 /* GoogleService-Info.plist in Resources */,
+				C061B36A25B7B3B50000679D /* GoogleService-Info.plist in Resources */,
 				C016EED42583D3D40018114B /* Assets.xcassets in Resources */,
 				C016EED22583D3D40018114B /* Main.storyboard in Resources */,
 			);

@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import Firebase
+import Firebase 
 
 class RegisterViewController: UIViewController {
 
@@ -16,6 +16,11 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //bypass AppleAutoFill
+        if #available(iOS 12.0, *){
+            emailRegister.textContentType = .oneTimeCode
+        }
         
         if #available(iOS 12.0, *){
             passwordRegister.textContentType = .oneTimeCode
@@ -39,6 +44,8 @@ class RegisterViewController: UIViewController {
             }  else {
                 
                 self.performSegue(withIdentifier: Const.registerSegue, sender: self)
+                
+                print(error)
             }
           }
         }

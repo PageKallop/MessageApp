@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bXp-jb-JNu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bXp-jb-JNu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,18 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lillac" translatesAutoresizingMaskIntoConstraints="NO" id="YeP-aO-mfk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Talk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcB-dg-ZHl">
-                                <rect key="frame" x="49.5" y="418" width="315" height="60"/>
+                                <rect key="frame" x="49.5" y="372" width="315" height="152"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="315" id="hbI-Ak-7gs"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
-                                <color key="textColor" red="0.29238482599999999" green="0.29238482599999999" blue="0.29238482599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="45"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTr-aW-LfF">
                                 <rect key="frame" x="50" y="640" width="314" height="57"/>
-                                <color key="backgroundColor" red="0.7112323344" green="0.73576752810000001" blue="0.86970441369999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.81121753789999995" green="0.84093675310000005" blue="1" alpha="0.55561879139072845" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.29238482599999999" green="0.29238482599999999" blue="0.29238482599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -38,7 +41,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e82-RX-9V6">
                                 <rect key="frame" x="50" y="760" width="314" height="57"/>
-                                <color key="backgroundColor" red="0.81121753789999995" green="0.84093675310000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.81121753789999995" green="0.84093675310000005" blue="1" alpha="0.55561879140000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" red="0.29238482599999999" green="0.29238482599999999" blue="0.29238482599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -56,9 +59,13 @@
                             <constraint firstItem="YcB-dg-ZHl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GRz-SU-7nt"/>
                             <constraint firstItem="e82-RX-9V6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="OGp-bd-Szf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YTr-aW-LfF" secondAttribute="trailing" constant="50" id="Tsr-2b-hkz"/>
+                            <constraint firstAttribute="bottom" secondItem="YeP-aO-mfk" secondAttribute="bottom" id="Vbn-9B-NKo"/>
                             <constraint firstItem="YTr-aW-LfF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="552" id="WrO-u2-dAy"/>
                             <constraint firstItem="e82-RX-9V6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="672" id="cjY-pG-o1e"/>
+                            <constraint firstItem="YeP-aO-mfk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gJO-5o-j2y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e82-RX-9V6" secondAttribute="trailing" constant="50" id="hPS-NK-n9d"/>
+                            <constraint firstItem="YeP-aO-mfk" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="mZ5-Qe-vig"/>
+                            <constraint firstItem="YeP-aO-mfk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="nP9-d5-z2h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YTr-aW-LfF" secondAttribute="bottom" constant="165" id="pMp-td-YGa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e82-RX-9V6" secondAttribute="bottom" constant="45" id="rNi-HK-9m4"/>
                         </constraints>
@@ -99,9 +106,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nzq-WN-Mkl">
                                 <rect key="frame" x="97" y="601" width="220" height="50"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="55"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
                                 <state key="normal" title="Log In">
-                                    <color key="titleColor" red="0.29238482599999999" green="0.29238482599999999" blue="0.29238482599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="loginButtonPressed:" destination="yiT-Pw-h8K" eventType="touchUpInside" id="VMt-U5-r3p"/>
@@ -171,9 +178,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3k-BL-2FY">
                                 <rect key="frame" x="85" y="515" width="244" height="57"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.29238482599999999" green="0.29238482599999999" blue="0.29238482599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="registerButtonPressed:" destination="1R4-xP-8eZ" eventType="touchUpInside" id="KwO-9b-MUE"/>
@@ -306,7 +313,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7ri-Ka-0xO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.7112323344" green="0.73576752810000001" blue="0.86970441369999996" alpha="0.20992860099999999" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.29238482599999999" green="0.29238482599999999" blue="0.29238482599999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.7112323344" green="0.73576752810000001" blue="0.86970441369999996" alpha="0.20992860099337748" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -319,11 +328,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tMW-iv-Own"/>
+        <segue reference="9hd-5H-uy3"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Untitled-2" width="912" height="224"/>
         <image name="arrow.up.message.fill" catalog="system" width="128" height="113"/>
+        <image name="lillac" width="1130" height="2440"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
